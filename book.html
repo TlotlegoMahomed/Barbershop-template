@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"><!--Javascript Library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="images/Barbershop icon.png" alt="">
+        </div>
+        <div>
+            <button id="menu-toggle">
+                <span></span>
+            </button>
+        <nav id="mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="book.html">Book Now</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        </div>
+
+    </header>
+    <main>
+        <div class="page-header" data-aos="fade-down">
+            <h1>Book here</h1>
+            <p> Want to book an appointment? Feel free to reach out to us. You can contact us through the following methods:</p>
+           </div>
+           <article>
+            <form class="contact-form" method="POST" data-netlify="true" data-aos="fade-up">
+  <input type="hidden" name="form-name" value="booking" />
+
+  <h2>Book an Appointment</h2>
+
+  <div class="form-group">
+    <label for="name">Full Name</label>
+    <input id="name" name="name" type="text" placeholder="Your full name" required />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="you@example.com" required />
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input id="phone" name="phone" type="tel" placeholder="e.g. 071 234 5678" required />
+  </div>
+
+  <div class="form-group">
+    <label for="service">Service</label>
+    <select id="service" name="service" required>
+      <option value="">Select a service</option>
+      <option value="cut">Haircut</option>
+      <option value="cut-beard">Haircut & Beard</option>
+      <option value="beard">Beard Trim</option>
+      <option value="kids">Kids Cut</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="date">Preferred Date</label>
+    <input id="date" name="date" type="date" required />
+  </div>
+
+  <div class="form-group">
+    <label for="time">Preferred Time</label>
+    <input id="time" name="time" type="time" required />
+  </div>
+
+  <div class="form-group">
+    <label for="notes">Additional Notes (optional)</label>
+    <textarea
+      id="notes"
+      name="notes"
+      placeholder="Any special requests?"
+      rows="4"
+    ></textarea>
+  </div>
+
+  <button type="submit">Request Booking</button>
+</form>
+
+           </article>
+           </main>
+    <footer>
+            <div>
+           <a href="#"><img src="images/Facebook icon.png" alt="Facebook"></a>
+           <a href="#"><img src="images/Instagram icon.png" alt="Instagram"></a>
+            <a href="#"><img src="images/Tiktok icon.png" alt="TikTok"></a>
+            <a href="#"><img src="images/WhatApp icon.png" alt="WhatsApp"></a>
+            </div>
+        
+        <p>Copyright &copy; 2024 Barbershop. All rights reserved.</p>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
